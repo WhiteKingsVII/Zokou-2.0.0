@@ -10,7 +10,7 @@ RUN apt-get update && \
   rm -rf /var/lib/apt/lists/*
   
 RUN git clone https://github.com/WhiteKingsVII/Zokou-2.0.0  /root/Zokou_git
-WORKDIR /root/Zokou_Bot/
+WORKDIR /root/Zokou_git/
 
 
 COPY package.json .
@@ -22,4 +22,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["node", "index.js"]
+CMD ["npm", "run", "zokou_git"]
