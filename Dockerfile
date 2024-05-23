@@ -22,4 +22,4 @@ COPY . .
 
 EXPOSE 5000
 
-CMD ["npm", "run", "zokou_git"]
+CMD ["node", "index.js"]
